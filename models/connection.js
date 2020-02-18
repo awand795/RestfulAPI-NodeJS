@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/bebek', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: true }, (err) => {
+mongoose.connect('mongodb://localhost:27017/awanda', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: true }, (err) => {
     if (!err) {
         console.log("Connected to database!!!");
     }

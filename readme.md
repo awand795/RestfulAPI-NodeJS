@@ -201,3 +201,11 @@ Description : The function of method delete on endpoint /api/v1/materialSharing 
 | id        | *required  | the id from file                                 	|
 
 example : http://localhost:3000/api/v1/absen?key_token=your_token_key&id=file_id
+
+##### Database Integration Documentation
+
+Description : Database using local database using mongodb://localhost:27017, and using database awanda, the awanda db have 4 collections :
+1. Absen : for saved absen data,
+2. Schedule : for saved class schedule data,
+3. token  : for saved and checking user token where is want to use api,
+4. file : for save file info only, the file saved on folder directory on storageDisk not on database. why? cause it will slowed the database.

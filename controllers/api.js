@@ -213,7 +213,7 @@ router.post('/absen',(req,res)=>{
 
 router.put('/absen',(req,res)=>{
     if(req.query.key_token){
-        checkCredential(key_token,res,doc=>{
+        checkCredential(req.query.key_token,res,doc=>{
             if(req.query.id){
                 absenModel.findByIdAndUpdate({_id:req.query.id},req.body,{new : true},(err,doc)=>{
                     res.json({status : true, message : "Successfully updated a new absen", data : doc});
@@ -233,7 +233,7 @@ router.delete('/absen',(req,res)=>{
     if(req.query.key_token){
         checkCredential(req.query.key_token,res,doc=>{
             if(req.query.id){
-                absenModel.findByIdAndRemove({id:req.query.id},(err,doc)=>{
+                absenModel.findByIdAndRemove({_id:req.query.id},(err,doc)=>{
                     if(!err){
                         res.json({status : true, message : "Successfully deleted the absen"});
                     }
