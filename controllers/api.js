@@ -161,7 +161,7 @@ router.get('/absen',(req,res)=>{
                 });
             }
             else if(req.query.id){
-                absenModel.find({_id : id},(err,doc)=>{
+                absenModel.find({_id : req.query.id},(err,doc)=>{
                     if(!err){
                         res.json({status : true, dataLength : doc.length, data : doc});
                     }
