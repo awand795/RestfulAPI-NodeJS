@@ -2,7 +2,15 @@
 
 ClassRoom API is create with Node JS (Express), and using nosql Database (MongoDB).
 How to install.
-First clone this git repository, after clone run npm install in your terminal, and to run this script write npm start on your terminal, the script will running on port 3000
+First clone this git repository, after clone run npm install in your terminal to install all dependecies : 
+
+$ npm install
+
+and to run this script write npm start on your terminal : 
+
+$ npm run start
+
+the script will running on port 3000
 
 ### Documentation
 
@@ -209,3 +217,30 @@ Description : Database using local database using mongodb://localhost:27017, and
 2. Schedule : for saved class schedule data,
 3. token  : for saved and checking user token where is want to use api,
 4. file : for save file info only, the file saved on folder directory on storageDisk not on database. why? cause it will slowed the database.
+
+and use mongoose schema you can check it on models folder
+
+Absen collection have 5 field : 
+1. NameStudent (the name of student)
+2. date (date absen)
+3. nameClass (class name he is)
+4. absen (absen type)
+5. description (the descriptions)
+
+Schedule Collection have 4 field :
+1. nameClass (name of class)
+2. date (date schedule)
+3. timeStart (start time of class schedule)
+4. timeEnd (the end of time class schedule)
+
+File collection have 5 field : 
+1. originalName (origin file name)
+2. fileName (filename in folder)
+3. path (file location to download)
+4. size (size of file)
+5. mimetype (the file type)
+
+Token collection have 3 field : 
+1. name (name registered user)
+2. email (email registered user for accessing key)
+3. token (The key token)
