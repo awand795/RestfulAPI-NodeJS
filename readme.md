@@ -2,7 +2,13 @@
 
 ClassRoom API is create with Node JS (Express), and using nosql Database (MongoDB).
 How to install.
-First clone this git repository, after clone run npm install in your terminal to install all dependecies : 
+First clone this git repository using this command on your terminal or git bash : 
+
+```sh
+$ npm git clone https://github.com/awand795/RestfulAPI-NodeJS.git
+```
+
+after clone run npm install in your terminal to install all dependecies : 
 
 ```sh
 $ npm install
@@ -16,17 +22,17 @@ $ npm run start
 
 the script will running on port 3000
 
-### Documentation
+## Documentation
 
 To get token key your must sign up on : http://localhost:3000/
 
 Base Url : http://localhost:3000/
 
-##### Class Schedule API Documentation
+### Class Schedule API Documentation
 
 Endpoint : /api/v1/class/
 
-###### Http Request Method Get
+#### Http Request Method Get
 
 Description : The function of method GET on endpoint /api/v1/class is for showing all class schedule on database.
 
@@ -40,7 +46,7 @@ example : http://localhost:3000/api/v1/class?key_token=your_token_key (For getti
 or : http://localhost:3000/api/v1/class?key_token=your_token_key&id=class_id (For getting specific schedule from id class)
 or : http://localhost:3000/api/v1/class?key_token=your_token_key&nameClass=class_name (For getting specific schedule with the name of class)
 
-###### Http Request Method POST
+#### Http Request Method POST
 
 Description : The function of method POST on endpoint /api/v1/class is for inserting new class schedule to database.
 
@@ -60,7 +66,7 @@ Body Request :
 example : http://localhost:3000/api/v1/class?key_token=your_token_key
 the data will send with body request with post method, or you can check on video for detailed example
 
-###### Http Request Method PUT
+#### Http Request Method PUT
 
 Description : The function of method put on endpoint /api/v1/class is for updating or change the mistake or something in class schedule.
 
@@ -80,7 +86,7 @@ Body Request :
 example : http://localhost:3000/api/v1/class?key_token=your_token_key
 the data will send with body request with post method, or you can check on video for detailed example
 
-###### Http Request Method DELETE
+#### Http Request Method DELETE
 
 Description : The function of method delete on endpoint /api/v1/class is for deleting class schedule where is you don't want it again.
 
@@ -95,11 +101,11 @@ example : http://localhost:3000/api/v1/class?key_token=your_token_key&id=class_i
 
 
 
-##### Absen API Documentation
+### Absen API Documentation
 
 Endpoint : /api/v1/absen
 
-###### Http Request Method Get
+#### Http Request Method Get
 
 Description : The function of method GET on endpoint /api/v1/absen is for showing all or specific absen on database.
 
@@ -114,7 +120,7 @@ example : http://localhost:3000/api/v1/absen?key_token=your_token_key (For getti
 or : http://localhost:3000/api/v1/absen?key_token=your_token_key&id=class_id (For getting specific absen from id absen)
 or : http://localhost:3000/api/v1/absen?key_token=your_token_key&nameClass=class_name&date=schedule_date (For getting specific absen with the name of class and date schedule, FYI if you using these option always use nameClass and date both if not it will response error)
 
-###### Http Request Method POST
+#### Http Request Method POST
 
 Description : The function of method POST on endpoint /api/v1/absen is for inserting new absen to database.
 
@@ -135,7 +141,7 @@ Body Request :
 example : http://localhost:3000/api/v1/absen?key_token=your_token_key
 the data will send with body request with post method, or you can check on video for detailed example
 
-###### Http Request Method PUT
+#### Http Request Method PUT
 
 Description : The function of method put on endpoint /api/v1/absen is for updating or change the mistake or something in absen.
 
@@ -156,7 +162,7 @@ Body Request :
 example : http://localhost:3000/api/v1/absen?key_token=your_token_key
 the data will send with body request with post method, or you can check on video for detailed example
 
-###### Http Request Method DELETE
+#### Http Request Method DELETE
 
 Description : The function of method delete on endpoint /api/v1/absen is for deleting absen where is you don't want it again.
 
@@ -171,11 +177,11 @@ example : http://localhost:3000/api/v1/absen?key_token=your_token_key&id=absen_i
 
 
 
-##### Material Sharing API Documentation
+### Material Sharing API Documentation
 
 Endpoint : api/v1/materialSharing
 
-###### Http Request Method Get
+#### Http Request Method Get
 
 Description : The function of method delete on endpoint /api/v1/materialSharing is for showing or getting specific file info and file path in directory.
 
@@ -187,7 +193,7 @@ Description : The function of method delete on endpoint /api/v1/materialSharing 
 example : http://localhost:3000/api/v1/materialSharing?key_token=your_token_key (This is for getting all data of file)
 Or : http://localhost:3000/api/v1/absen?key_token=your_token_key&id=file_id (For getting specific file with the id of file).
 
-###### Http Request Method Post
+#### Http Request Method Post
 
 Description : The function of method delete on endpoint /api/v1/materialSharing is for showing or inserting file into path directory and file info (like : name of file,path,mimetype,etc) will saved in database.
 
@@ -203,7 +209,7 @@ Body Request With Form-data enctype
 
 example : http://localhost:3000/api/v1/materialSharing?key_token=your_token_key and the data will send with body request enctype form-data. you will see the detailed information on video
 
-###### Http Request Method DELETE
+#### Http Request Method DELETE
 
 Description : The function of method delete on endpoint /api/v1/materialSharing is for deleting file where is you don't want it again.
 
@@ -214,7 +220,10 @@ Description : The function of method delete on endpoint /api/v1/materialSharing 
 
 example : http://localhost:3000/api/v1/absen?key_token=your_token_key&id=file_id
 
-##### Database Integration Documentation
+
+
+
+### Database Integration Documentation
 
 Description : Database using local database using mongodb://localhost:27017, and using database awanda, the awanda db have 4 collections :
 1. Absen : for saved absen data,
