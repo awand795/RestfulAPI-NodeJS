@@ -4,11 +4,15 @@ ClassRoom API is create with Node JS (Express), and using nosql Database (MongoD
 How to install.
 First clone this git repository, after clone run npm install in your terminal to install all dependecies : 
 
+```sh
 $ npm install
+```
 
 and to run this script write npm start on your terminal : 
 
+```sh
 $ npm run start
+```
 
 the script will running on port 3000
 
