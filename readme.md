@@ -5,7 +5,7 @@ How to install.
 First clone this git repository using this command on your terminal or git bash : 
 
 ```sh
-$ npm git clone https://github.com/awand795/RestfulAPI-NodeJS.git
+$ git clone https://github.com/awand795/RestfulAPI-NodeJS.git
 ```
 
 after clone run npm install in your terminal to install all dependecies : 
